@@ -1,0 +1,32 @@
+:root{
+    --color: rgb(169, 169, 169);
+}
+fieldset{
+    border-radius: 10px;
+    border: 5px solid var(--color);
+}
+fieldset:hover{
+    transition-duration: 0.5s;
+    border: 5px solid white;
+}
+input, select, textarea{
+    border-radius: 6px;
+}
+input[type='radio'] {
+    accent-color: var(--color);
+}
+input[type='submit'] {
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: var(--color);
+    color: black;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+input[type='submit']:hover{
+    background-color: white;
+    border: 2px solid var(--color);
+    color: var(--color);
+}

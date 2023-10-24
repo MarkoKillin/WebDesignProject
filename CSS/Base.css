@@ -1,0 +1,118 @@
+:root{
+    --color: rgb(169, 169, 169);
+}
+html{
+    scroll-behavior: smooth;
+}
+div button{
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: var(--color);
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+button:hover{
+    background-color: white;
+    border: 2px solid var(--color);
+    color: var(--color);
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.vratiNaVrh{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+    margin: auto;
+    width: 150px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: var(--color);
+    color: black;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    z-index: 1;
+}
+div a img{
+    display: inline-block;
+    margin: 20px;
+    width: 200px;
+    border-radius: 10px;
+}
+body{
+    background-image: url(../Slike/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#meni{
+    position: absolute;
+    right: 45px;
+    top: 40px;
+}
+div#vrh{
+    border-bottom: 10px solid white;
+    border-right: 10px solid white;
+    margin-bottom: 7px;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+div#vrh:hover{
+    border-bottom: 10px solid var(--color);
+    border-right: 10px solid var(--color);
+    transition-duration: 0.5s;
+}
+#tema1{
+    border: 2px solid white;
+    background-color: red;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    position: fixed;
+    right: 95px;
+    bottom: 5px;
+    z-index: 2;
+}
+#tema2{
+    border: 2px solid white;
+    background-color: rgb(154, 205, 50);
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    position: fixed;
+    right: 65px;
+    bottom: 5px;
+    z-index: 2;
+}
+#tema3{
+    border: 2px solid white;
+    background-color: blue;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    position: fixed;
+    right: 35px;
+    bottom: 5px;
+    z-index: 2;
+}
+#reset{
+    border: 2px solid white;
+    background-color: gray;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    z-index: 2;
+}
+.selektovan{
+    transform: scale(1.1);
+}

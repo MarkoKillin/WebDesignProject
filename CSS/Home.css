@@ -1,0 +1,25 @@
+:root{
+    --color: rgb(169, 169, 169);
+}
+.homeSlika{
+    width: 99.4%;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    border: 5px solid var(--color);
+    padding: 0px;
+}
+.ifram{
+    width: 99.4%;
+    height: 390px;
+    border: 5px solid var(--color);
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}

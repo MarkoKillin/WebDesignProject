@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="CSS/Base.css">
+        <script src="JS/Tema.js"></script>
+        <script src="JS/Animacija.js"></script>
+        <meta charset="utf-8">
+        <title>Nastupi</title>
+        <style>
+            :root{
+                --color: rgb(169, 169, 169);
+            }
+            p{
+                font-size: 1.2em;
+            }
+            h1, h2{
+                text-align: center;
+            }
+            iframe{
+                border-radius: 12px;
+                border: 5px solid var(--color);
+                width: 400px;
+                height: 400px;
+                position: relative;
+                left: 50%;
+                margin-left: -200px;
+                margin-bottom: 20px;
+                transform: translateX(-75%);
+                transition: all 1s ease;
+                opacity: 0;
+            }
+            #animacija{
+                transform: translateX(0);
+                opacity: 1;
+            }
+            p{
+                text-indent: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        </style>
+    </head>
+    <body onload="teme()">
+        <div id="vrh" ondblclick="dupliKlik()" onclick="jednostrukiKlik()">
+            <a href="https://www.metallica.com" target="_blank"><img src="Slike/TopLogo.jpg" title="Klik na sliku Vas vodi na metallica.com" alt="Metallica Logo"></a>
+            <div id="meni">
+                <a href="Home.html"><button>HOME</button></a>
+                <a href="Bend.html"><button>O BENDU</button></a>
+                <a href="Preporuka.html"><button>PREPORUKA</button></a>
+                <a href="Galerija.html"><button>GALERIJA</button></a>
+                <a href="Karte.html"><button>KARTE</button></a>
+                <a href="Registracija.html"><button>REGISTRACIJA</button></a>
+            </div>
+        </div>
+        <div>
+            <div id="tema1" class="teme" data-color="rgb(255, 0, 0)"></div>
+            <div id="tema2" class="teme" data-color="rgb(154, 205, 50)"></div>
+            <div id="tema3" class="teme" data-color="rgb(0, 0, 255)"></div>
+            <div id="reset" class="teme" data-color="rgb(169, 169, 169)"></div>
+        </div>
+
+        <h1>Ovde su predstavljene neke od mojih preporuka</h1>
+
+        <h2>Creeping Death</h2>
+        <p>Definitivno jedna od najbrzih pesama kada je Metalika u pitanju. Karakteristicna je po svojoj brzini i veoma prepoznatljivom riff-u. Takodje ova pesma ima jedan od najtezih solo-a na gitari koje Metalika izvodi. Pesma je deo albuma Ride the Lightning. Govori o desetoj Egipatskoj kugi.</p>
+        <iframe class="i1" src="https://www.youtube.com/embed/xAOMEqMXiXI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2>Master of Puppets</h2>
+        <p>Takodje spada u jednu od brzih pesama. Ova pesma ima mozda i najprepoznatljiviji riff, kao i solo. Pesma se nalazi na istoimenom albumu(Master of Puppets). James Hetfield je rekao da ova pesma govori o drogi, i tome kako se stvari lako okrenu, tj. umesto da covek kontrolise sta prica i radi, droga kontrolise njega.</p>
+        <iframe class="i2" src="https://www.youtube.com/embed/0obBdrfUMzU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2>One</h2>
+        <p>Za promenu, pesma koja nije toliko brza kao poslednje dve. Nalazi se na albumu ...And Justice for All. Pesma je drugacija od normalnih pesama jer se menja uz pricu, u pocetku je lagana dok opisuje pocetak price, a kasnije kako sve vise napreduje postaje sve intenzivnija i agresivnija, kao i prica u tom trenutku. Ovo je jedna antiratna pesma i napisana je po delu Johnny got his gun. Prica o tome kako je vojnik nagazio na nagaznu minu koja mu je oduzela sva cula, i vojnik opisuje kako je zarobljen u sopstvenom telu.</p>
+        <iframe class="i3" src="https://www.youtube.com/embed/9euhEsyX_gQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2>Enter Sandman</h2>
+        <p>Takodje jedna od najprepoznatljivijih pesama. Ova pesma opisuje decije nocne more, ali tema koja je podstakla pisanje ovog teksta je malo drugacija. Riff u ovoj pesmi je veoma lak i specifican, pa ga dosta gitarista pocetnika uci vrlo rano.</p>
+        <iframe class="i4" src="https://www.youtube.com/embed/o3RnYlBfaSo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2>Seek and Destroy</h2>
+        <p>Ova pesma opisuje nagon za ubistvom, ali zapravo ne uciniti to. Pevac je jednom prilikom nasalio da je pesma o lovu. Inspiracija za ovu pesmu im je bila pesma od Diamond Head-a pod nazivom Dead Reckoning. Pesma je srednjeg tempa, ali veoma "zaraznog" ritma, koji se vrlo lako zapamti.</p>
+        <iframe class="i5" src="https://www.youtube.com/embed/Wm58sGEdgAw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2>Moth into Flame</h2>
+        <p>Inspiracija za ovu pesmu je bila Amy Winehouse. Pesma dosta opisuje kako popularnost moze uticati na ljudske zivote. Pevac je izjavio da je bio tuzan kada je video kako talentovana osoba moze da nasedne na "popularnost", ali da vidi kako se taj mentalitet pojavljuje u svakodnevnom zivotu.</p>
+        <iframe class="i6" src="https://www.youtube.com/embed/TPeoJ4wm8eU?list=PLZ9DoO2uX9wW8zIGvcSLPHtzfKRWYNuCg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2>Nothing Else Matters</h2>
+        <p>Ovo je jedna od sporijih pesama koje Metalika ima. Na neki nacin moze da se svrsta u baladu. Pesmu je James napisao na turneji 1990. kada mu je nedostajala kuca. U pocetku pesma nije bila u planu da bude objavljena, pevac je napisao sam za sebe, ali je bubnjar Lars cuo i predlozio da je ubace na album.</p>
+        <iframe class="i7" src="https://www.youtube.com/embed/bqJw34CIsx0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2>Turn the Page</h2>
+        <p>Ova pesma nije originalno napisana od strane Metalike, vec je ovo njihov cover na pesmu koju je napisao Bob Seger. Pesma govori o emotivnim i socijalnim usponima i padovima muzicara na turnejama. Takodje je jedna od sporijih pesama.</p>
+        <iframe class="i8" src="https://www.youtube.com/embed/8WVyFoMIxC4" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2>Harvester of Sorrow</h2>
+        <p>U ovoj pesmi se govori o coveku kog obuzima ludilo, i koji iskaljuje svoj bes na svoju porodicu. Na kraju same pesme, se nagovestava da gubi razum i ubija svoju porodicu. Pesma ima karakteristican zvuk i takodje je prepoznatljiva.</p>
+        <iframe class="i9" src="https://www.youtube.com/embed/_3yWbRngyJs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2>Sad but True</h2>
+        <p>Ova pesma je o samom zivotu i kako nas zivot kontrolise. Govori o tome kako nas nasa proslost i odluke grade u osobe koje jesmo. "Tuzno ali istinito" znaci da ne moze da pobegnemo od nase proslosti, i da cesto nasa buducnost zavisi bas od tih proslih odluka.</p>
+        <iframe class="i10" src="https://www.youtube.com/embed/krpnMA-N3-c" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+
+        <a href="#vrh"><button class="vratiNaVrh">Vrati se na vrh</button></a>
+    </body>
+</html>

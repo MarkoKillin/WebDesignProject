@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="CSS/Base.css">
+        <link rel="stylesheet" type="text/css" href="CSS/Galerija.css">
+        <script src="JS/Tema.js"></script>
+        <meta charset="utf-8">
+        <title>Galerija</title>
+    </head>
+    <body onload="teme()">
+        <div id="vrh" ondblclick="dupliKlik()" onclick="jednostrukiKlik()">
+            <a href="https://www.metallica.com" target="_blank"><img src="Slike/TopLogo.jpg" title="Klik na sliku Vas vodi na metallica.com" alt="Metallica Logo"></a>
+            <div id="meni">
+                <a href="Home.html"><button>HOME</button></a>
+                <a href="Bend.html"><button>O BENDU</button></a>
+                <a href="Preporuka.html"><button>PREPORUKA</button></a>
+                <a href="Galerija.html"><button>GALERIJA</button></a>
+                <a href="Karte.html"><button>KARTE</button></a>
+                <a href="Registracija.html"><button>REGISTRACIJA</button></a>
+            </div>
+        </div>
+        <div>
+            <div id="tema1" class="teme" data-color="rgb(255, 0, 0)"></div>
+            <div id="tema2" class="teme" data-color="rgb(154, 205, 50)"></div>
+            <div id="tema3" class="teme" data-color="rgb(0, 0, 255)"></div>
+            <div id="reset" class="teme" data-color="rgb(169, 169, 169)"></div>
+        </div>
+
+        <img src="Slike/scena.jpg" alt="Slika sa nastupa" class="prviRed">
+        <a href="https://en.wikipedia.org/wiki/Kirk_Hammett" target="_blank"><img src="Slike/kirk1.jpg" alt="Slika sa nastupa" class="prviRed"></a> <br>
+
+        <a href="https://en.wikipedia.org/wiki/James_Hetfield" target="_blank"><img src="Slike/het.jpg" alt="Slika sa nastupa" class="drugiRed"></a>
+        <a href="https://en.wikipedia.org/wiki/Robert_Trujillo" target="_blank"><img src="Slike/robert.jpg" alt="Slika sa nastupa" class="drugiRed"> </a>
+        <a href="https://en.wikipedia.org/wiki/Lars_Ulrich" target="_blank"><img src="Slike/lars.jpg" alt="Slika sa nastupa" class="drugiRed"></a> <br>
+
+        <img src="Slike/nastup1.jpg" alt="Slika sa nastupa" class="treciRed">
+        <img src="Slike/lars2.jpg" alt="Slika sa nastupa" class="treciRed"> <br>
+
+        <img src="Slike/kirk2.jpg" alt="Slika sa nastupa" class="cetvrtiRed">
+        <img src="Slike/duel.jpg" alt="Slika sa nastupa" class="cetvrtiRed"> 
+        <img src="Slike/james2.jpg" alt="Slika sa nastupa" class="cetvrtiRed"> <br><br><br>
+
+        <a href="#vrh"><button class="vratiNaVrh">Vrati se na vrh</button></a>
+    </body>
+</html>

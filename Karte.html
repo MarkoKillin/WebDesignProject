@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="CSS/Base.css">
+        <link rel="stylesheet" type="text/css" href="CSS/Karte.css">
+        <script src="JS/Karte.js"></script>
+        <script src="JS/Tema.js"></script>
+        <meta charset="utf-8">
+        <title>Karte</title>
+    </head>
+    <body onload="inicijalizuj(); teme();">
+        <div id="vrh" ondblclick="dupliKlik()" onclick="jednostrukiKlik()">
+            <a href="https://www.metallica.com" target="_blank"><img src="Slike/TopLogo.jpg" title="Klik na sliku Vas vodi na metallica.com" alt="Metallica Logo"></a>
+            <div id="meni">
+                <a href="Home.html"><button>HOME</button></a>
+                <a href="Bend.html"><button>O BENDU</button></a>
+                <a href="Preporuka.html"><button>PREPORUKA</button></a>
+                <a href="Galerija.html"><button>GALERIJA</button></a>
+                <a href="Karte.html"><button>KARTE</button></a>
+                <a href="Registracija.html"><button>REGISTRACIJA</button></a>
+            </div>
+        </div>
+        <div>
+            <div id="tema1" class="teme" data-color="rgb(255, 0, 0)"></div>
+            <div id="tema2" class="teme" data-color="rgb(154, 205, 50)"></div>
+            <div id="tema3" class="teme" data-color="rgb(0, 0, 255)"></div>
+            <div id="reset" class="teme" data-color="rgb(169, 169, 169)"></div>
+        </div>
+        
+        <div id="kupovinakarte">
+            <form>
+                <fieldset>
+                    <legend>Ovde mozete rezervisati Vase karte</legend><br>
+
+                    Ime i prezime:
+                    <input type="text" id="imeiprezime" placeholder="Petar Petrovic"><br><br>
+
+                    Odaberite grad:
+                    <select id="grad">
+                        <option value="Beograd">Beograd</option>
+                        <option value="Zagreb">Zagreb</option>
+                        <option value="London">London</option>
+                    </select> <br><br>
+
+                    Odaberite datum:
+                    <input type="date" id="datum"> <br><br>
+
+                    Odaberite vrstu karte:
+                    <select id="vrstakarte">
+                        <option value="Regularna">Regularna</option>
+                        <option value="VIP">VIP</option>
+                        <option value="Pit">Pit</option>
+                    </select> <br><br>
+
+                    <button type="button" onclick="proveraKarte()">Rezervisi kartu</button><br> <br>
+                    Ukoliko zelite da obrisete kartu, CTRL+klik na kartu i potvrdite.
+                </fieldset>
+            </form>
+            <div id="deo2">
+                <div class="karta">
+                    Ovo su vase odabrane karte:
+                </div>
+            </div>
+        </div>
+
+        <a href="#vrh"><button class="vratiNaVrh">Vrati se na vrh</button></a>
+    </body>
+</html>

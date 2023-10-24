@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="CSS/Base.css">
+        <link rel="stylesheet" type="text/css" href="CSS/Registracija.css">
+        <script src="JS/Forma.js"></script>
+        <script src="JS/Tema.js"></script>
+        <meta charset="utf-8">
+        <title>Registracija</title>
+    </head>
+    <body onload="inicijalizacijaProvera(); teme();">
+        <div id="vrh" ondblclick="dupliKlik()" onclick="jednostrukiKlik()">
+            <a href="https://www.metallica.com" target="_blank"><img src="Slike/TopLogo.jpg" title="Klik na sliku Vas vodi na metallica.com" alt="Metallica Logo"></a>
+            <div id="meni">
+                <a href="Home.html"><button>HOME</button></a>
+                <a href="Bend.html"><button>O BENDU</button></a>
+                <a href="Preporuka.html"><button>PREPORUKA</button></a>
+                <a href="Galerija.html"><button>GALERIJA</button></a>
+                <a href="Karte.html"><button>KARTE</button></a>
+                <a href="Registracija.html"><button>REGISTRACIJA</button></a>
+            </div>
+        </div><br>
+        <div>
+            <div id="tema1" class="teme" data-color="rgb(255, 0, 0)"></div>
+            <div id="tema2" class="teme" data-color="rgb(154, 205, 50)"></div>
+            <div id="tema3" class="teme" data-color="rgb(0, 0, 255)"></div>
+            <div id="reset" class="teme" data-color="rgb(169, 169, 169)"></div>
+        </div>
+        
+        <form onsubmit="return provera()">
+            <fieldset>
+                <legend>Misljenje o sajtu</legend><br>
+                Koliko si puta posetio/la sajt?
+                <input type="number" min="1" value="1"><br><br>
+                Da li ti se svideo sadrzaj sajta i nacin na koji je organizovan?
+                <select name="Misljenje">
+                    <option>Svidja mi se</option>
+                    <option>Nemam misljenje</option>
+                    <option>Ne svidja mi se</option>
+                </select> <br><br>
+                Komentar: <br>
+                <textarea cols="80" rows="8">Unesite komentar kako mozemo da poboljsamo nas sajt</textarea><br>
+            </fieldset><br>
+            
+            <fieldset>
+                <legend>Licni podaci</legend><br>
+                <div>
+                    <label for="name">Ime i prezime:</label>
+                    <input type="text" id="name" name="name" required pattern="([a-zA-Z]+\s)([a-zA-Z]+)">
+                </div><br>
+                
+                <div id="divmail">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+                </div><br>
+                
+                <div>
+                    <label for="password">Lozinka:</label>
+                    <input type="password" id="password" name="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}$">
+                </div><br>
+                
+                <div>
+                    <label for="adress">Adresa:</label>
+                    <input type="text" id="adress" name="adress">
+                </div><br>
+                
+                <div>
+                    <label for="postanskibroj">Postanski broj:</label>
+                    <input type="text" id="postanskibroj" name="postanskibroj" required pattern="[0-9]{5}">
+                </div><br>
+                
+                <div>
+                    <label for="date">Datum rodjenja:</label>
+                    <input type="date" id="date" name="date" required>
+                </div><br>
+                Pol: <br>
+                <input type="radio" name="pol" checked>Muski <br>
+                <input type="radio" name="pol">Zenski <br><br>
+                <input type="checkbox" required>Prihvatam da se obradjuju moji podaci radi identifikacije <br>
+                <input type="checkbox" required>Potvrdjujem da su uneti podaci tacni <br><br>
+            </fieldset><br>
+            <input style="border-radius: 8px;" type="submit" value="Posalji">
+        </form> <br><br>
+        
+        <a href="#vrh"><button class="vratiNaVrh">Vrati se na vrh</button></a>
+    </body>
+</html>
